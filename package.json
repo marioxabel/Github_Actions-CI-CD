@@ -1,6 +1,9 @@
 {
   "name": "coding-quiz",
   "version": "1.0.0",
+  "engines": {
+    "node": "20.x"
+  },
   "description": "",
   "scripts": {
     "start": "cd server && npm run start",
