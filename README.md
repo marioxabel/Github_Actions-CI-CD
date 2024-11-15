@@ -1,4 +1,4 @@
-#GitHub Actions CI/CD
+# GitHub Actions CI/CD
 
 - Deployed app: [Quizz App](https://github-actions-ci-cd-3rd7.onrender.com)
 
