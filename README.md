@@ -1,4 +1,4 @@
-# Social Media API with GitHub Actions CI/CD
+#GitHub Actions CI/CD
 
 ![Static Badge](https://img.shields.io/badge/license-MIT-blue?style=flat)
 
