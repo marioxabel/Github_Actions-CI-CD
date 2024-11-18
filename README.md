@@ -1,4 +1,8 @@
-# Social Media API with GitHub Actions CI/CD
+
+# GitHub Actions CI/CD
+
+- Deployed app: [Quizz App](https://github-actions-ci-cd-3rd7.onrender.com)
+
 
 ![Static Badge](https://img.shields.io/badge/license-MIT-blue?style=flat)
 
