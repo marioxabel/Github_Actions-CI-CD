@@ -1,5 +1,7 @@
 # Name of the GitHub Actions workflow
 name: Deploy
+env:
+  DEPLOY_URL: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
 
 # Trigger the workflow on push and pull request events to the main branch
 on:
@@ -20,14 +22,14 @@ jobs:
       # Checkout the code from the repository
       - uses: actions/checkout@v3
 
+      - name: Install dependencies
+        run: npm install
 
       # Define a step named "Deploy"
       - name: Deploy
         # Only run this step if the branch is main
         if: github.ref == 'refs/heads/main'
         # Set an environment variable with the deployment URL from secrets
-        env:
-          DEPLOY_URL: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
         # Run the deployment command
         run: |
           curl "$DEPLOY_URL"
