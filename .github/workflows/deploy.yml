@@ -27,9 +27,9 @@ jobs:
 
       # Define a step named "Deploy"
       - name: Deploy
-        # Only run this step if the branch is main
-        if: github.ref == 'refs/heads/main'
+
         # Set an environment variable with the deployment URL from secrets
         # Run the deployment command
         run: |
+          echo "Deploying to $DEPLOY_URL"
           curl "$DEPLOY_URL"
