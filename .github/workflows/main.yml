@@ -29,10 +29,13 @@ jobs:
       - name: 🧰 Install Deps
         run: npm install
         
+<<<<<<< HEAD
+=======
       # Run lint
       - name: Run Lint
         run: npm run lint
 
+>>>>>>> main
       # Run cypress test
       - name: Run cypress test
         uses: cypress-io/github-action@v6
@@ -40,4 +43,8 @@ jobs:
           build: npm run build
           start: npm run start 
           component: true
+<<<<<<< HEAD
+  
+=======
     
+>>>>>>> main
